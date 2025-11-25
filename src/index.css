@@ -1,4 +1,9 @@
 :root {
-  font-family: 'Times New Roman', Times, serif;
-  background-image: url('./assets/ss027.gif');
+  font-family: "Times New Roman", Times, serif;
+  background-image: url("./assets/ss027.gif");
+  cursor: url("./assets/normal.cur"), auto;
+}
+
+a, button {
+  cursor: url("./assets/select.cur"), auto;
 }
