@@ -47,18 +47,7 @@ function App() {
             </td>
           </tr>
         </table>
-
-        <center>
-          <h3>Visitor Counter:</h3>
-          <img src="https://i.ibb.co/Lg7fXj7/counter.gif" />
-        </center>
       </div>
-
-      <marquee scrollamount="6">
-        <img src="https://i.ibb.co/4Y4tKkw/flame.gif" />
-        <img src="https://i.ibb.co/4Y4tKkw/flame.gif" />
-        <img src="https://i.ibb.co/4Y4tKkw/flame.gif" />
-      </marquee>
     </>
   );
 }

@@ -10,3 +10,9 @@ a,
 button {
   cursor: url("./assets/select.cur"), auto;
 }
+
+#sfc2uz61ynkrzp19qhe4cbhu56bj7psjqns {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
