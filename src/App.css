@@ -27,3 +27,36 @@ table {
   padding: 10px;
   text-align: center;
 }
+
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee__inner {
+  display: inline-block;
+  padding-inline: 1rem;
+  animation: marquee-move 20s linear infinite alternate;
+}
+
+@keyframes marquee-move {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(calc(100vw - 100%));
+  }
+}
+
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+

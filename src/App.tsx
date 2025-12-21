@@ -13,20 +13,24 @@ const componentMap = new Map<string, JSX.Element>([
 export const App = () => {
   const [currentComponent, setCurrentComponent] = useState("main");
   const selectedComponent = useMemo(() => {
-    return (componentMap.has(currentComponent)
-      ? componentMap.get(currentComponent)
-      : componentMap.get("default")) as JSX.Element;
+    return (
+      componentMap.has(currentComponent)
+        ? componentMap.get(currentComponent)
+        : componentMap.get("default")
+    ) as JSX.Element;
   }, [currentComponent]);
 
   return (
     <>
-      <marquee scrollamount="5" behavior="alternate">
-        🌟🌟 WELCOME TO MY PERSONAL WEBSITE 🌟🌟
-      </marquee>
+      <div className="marquee">
+        <div className="marquee__inner">
+          🌟🌟 WELCOME TO MY PERSONAL WEBSITE 🌟🌟
+        </div>
+      </div>
 
       <div className="container">
         <h1 className="title">
-          Hi, I'm <blink>KASANIE_LASKI</blink>
+          Hi, I'm <span className="blink">KASANIE_LASKI</span>
         </h1>
 
         <img className="construction" src="construction.gif" />
@@ -34,7 +38,8 @@ export const App = () => {
         <table cellSpacing="0" cellPadding="12">
           <tr>
             <td className="nav">
-              <span onClick={() => setCurrentComponent("main")}>HOME</span>&nbsp;|&nbsp;
+              <span onClick={() => setCurrentComponent("main")}>HOME</span>
+              &nbsp;|&nbsp;
               <span
                 onClick={() => {
                   setCurrentComponent("info");
