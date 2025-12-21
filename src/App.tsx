@@ -1,31 +1,52 @@
-import { useState } from 'react'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useMemo, useState, type JSX } from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
+import "./App.css";
+
+import { MainComponent, InfoComponent } from "./components";
+
+const componentMap = new Map<string, JSX.Element>([
+  ["main", <MainComponent />],
+  ["info", <InfoComponent />],
+  ["default", <MainComponent />],
+]);
+
+export const App = () => {
+  const [currentComponent, setCurrentComponent] = useState("main");
+  const selectedComponent = useMemo(() => {
+    return (componentMap.has(currentComponent)
+      ? componentMap.get(currentComponent)
+      : componentMap.get("default")) as JSX.Element;
+  }, [currentComponent]);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <marquee scrollamount="5" behavior="alternate">
+        🌟🌟 WELCOME TO MY PERSONAL WEBSITE 🌟🌟
+      </marquee>
 
-export default App
+      <div className="container">
+        <h1 className="title">
+          Hi, I'm <blink>KASANIE_LASKI</blink>
+        </h1>
+
+        <img className="construction" src="construction.gif" />
+
+        <table cellSpacing="0" cellPadding="12">
+          <tr>
+            <td className="nav">
+              <span onClick={() => setCurrentComponent("main")}>HOME</span>&nbsp;|&nbsp;
+              <span
+                onClick={() => {
+                  setCurrentComponent("info");
+                }}
+              >
+                ABOUT ME
+              </span>
+            </td>
+          </tr>
+          {selectedComponent}
+        </table>
+      </div>
+    </>
+  );
+};
