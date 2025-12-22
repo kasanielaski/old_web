@@ -51,7 +51,18 @@ export const App = () => {
               </td>
             </tr>
           </thead>
+
           <tbody>{selectedComponent}</tbody>
+
+          <tfoot>
+            <tr>
+              <td colSpan={2} className="nav">
+                <a href="https://github.com/kasanielaski/" target="_blank">GitHub</a>
+                &nbsp;|&nbsp;
+                <a href="https://www.linkedin.com/in/kasanielaski/" target="_blank">LinkedIn</a>
+              </td>
+            </tr>
+          </tfoot>
         </table>
       </div>
     </>

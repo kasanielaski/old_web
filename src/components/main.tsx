@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import "./styles.css";
 
 export const MainComponent = () => {
   const period = useMemo(() => {
@@ -22,16 +23,16 @@ export const MainComponent = () => {
         </p>
 
         <h2>Skills</h2>
-        <ul>
+        <ul className="styled-list">
           <li>
-            🔥 JavaScript, TypeScript, React, Redux, Zustand, React Query, Vue,
+            JavaScript, TypeScript, React, Redux, Zustand, React Query, Vue,
             Vuex, Pinia
           </li>
           <li>
-            🛸 React Testing Library, Jest, Mocha, Vue Test Utils, Storybook
+            React Testing Library, Jest, Mocha, Vue Test Utils, Storybook
           </li>
-          <li>💾 Node, Nest.js, Fastify, Express, Prisma</li>
-          <li>🎵 Russian (Native), English (B2), Japanese (N3)</li>
+          <li>Node, Nest.js, Fastify, Express, Prisma</li>
+          <li>Russian (Native), English (B2), Japanese (N3)</li>
         </ul>
       </td>
     </tr>

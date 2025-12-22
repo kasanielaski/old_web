@@ -1,16 +1,18 @@
+import "./styles.css";
+
 export const InfoComponent = () => {
   return (
     <>
       <tr>
         <td colSpan={2} align="center">
           <p>
-            <b>Invent.us</b>
+            <b>🔥🔥Invent.us🔥🔥</b>
           </p>
         </td>
       </tr>
       <tr style={{ verticalAlign: "baseline" }}>
         <td>
-          <ul>
+          <ul className="styled-list">
             <li>
               Developed a universal scalable microfrontend platform using React,
               TypeScript, and Effector, resulting in a 54% reduction in
@@ -53,13 +55,13 @@ export const InfoComponent = () => {
       <tr>
         <td colSpan={2} align="center">
           <p>
-            <b>Upride</b>
+            <b>🔥🔥Upride🔥🔥</b>
           </p>
         </td>
       </tr>
       <tr style={{ verticalAlign: "baseline" }}>
         <td>
-          <ul>
+          <ul className="styled-list">
             <li>
               Set up a project from scratch using Vue, TypeScript, and Nest.js,
               enabling the team to deliver the first MVP within 3 months.

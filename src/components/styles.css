@@ -1,0 +1,7 @@
+.styled-list {
+  list-style-type: "💾 "; /* Add a space after the emoji for better spacing */
+}
+
+.clear-list {
+  list-style: none;
+}
