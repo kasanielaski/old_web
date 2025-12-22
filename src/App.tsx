@@ -30,26 +30,28 @@ export const App = () => {
 
       <div className="container">
         <h1 className="title">
-          Hi, I'm <span className="blink">KASANIE_LASKI</span>
+          Hi, I'm <span className="blink">KASANIELASKI</span>
         </h1>
 
         <img className="construction" src="construction.gif" />
 
         <table cellSpacing="0" cellPadding="12">
-          <tr>
-            <td className="nav">
-              <span onClick={() => setCurrentComponent("main")}>HOME</span>
-              &nbsp;|&nbsp;
-              <span
-                onClick={() => {
-                  setCurrentComponent("info");
-                }}
-              >
-                ABOUT ME
-              </span>
-            </td>
-          </tr>
-          {selectedComponent}
+          <thead>
+            <tr>
+              <td colSpan={2} className="nav">
+                <span onClick={() => setCurrentComponent("main")}>HOME</span>
+                &nbsp;|&nbsp;
+                <span
+                  onClick={() => {
+                    setCurrentComponent("info");
+                  }}
+                >
+                  EXPIRIENCE
+                </span>
+              </td>
+            </tr>
+          </thead>
+          <tbody>{selectedComponent}</tbody>
         </table>
       </div>
     </>
