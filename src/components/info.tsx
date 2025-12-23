@@ -6,7 +6,7 @@ export const InfoComponent = () => {
       <tr>
         <td colSpan={2} align="center">
           <p>
-            <b>🔥🔥Invent.us🔥🔥</b>
+            <b className="blink">🔥🔥 Invent.us 🔥🔥</b>
           </p>
         </td>
       </tr>
@@ -52,10 +52,11 @@ export const InfoComponent = () => {
           <p>Dubai, UAE</p>
         </td>
       </tr>
+
       <tr>
         <td colSpan={2} align="center">
           <p>
-            <b>🔥🔥Upride🔥🔥</b>
+            <b className="blink">🔥🔥 Upride 🔥🔥</b>
           </p>
         </td>
       </tr>
@@ -74,6 +75,59 @@ export const InfoComponent = () => {
         </td>
         <td>
           <p style={{ whiteSpace: "nowrap" }}>Sep 2019 - Sep 2020</p>
+          <p>Remote</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td colSpan={2} align="center">
+          <p>
+            <b className="blink">🔥🔥 Hearst Shkulev Media 🔥🔥</b>
+          </p>
+        </td>
+      </tr>
+      <tr style={{ verticalAlign: "baseline" }}>
+        <td>
+          <ul className="styled-list">
+            <li>Developed UI-kit with Storybook</li>
+            <li>Build Vue components with Typescript</li>
+            <li>Integrated BEM methodology</li>
+            <li>Refactored and fix bugs in a legacy project </li>
+          </ul>
+        </td>
+        <td>
+          <p style={{ whiteSpace: "nowrap" }}>Oct 2018 - Sep 2019</p>
+          <p>Remote</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td colSpan={2} align="center">
+          <p>
+            <b className="blink">🔥🔥 E2E4 🔥🔥</b>
+          </p>
+        </td>
+      </tr>
+      <tr style={{ verticalAlign: "baseline" }}>
+        <td>
+          <ul className="styled-list">
+            <li>Developed client-side of ecom shop</li>
+            <li>Implemented Vuex, Vue-router</li>
+            <li>
+              Build custom UI-kit with on top of 3rd party libs in Storybook
+            </li>
+            <li>
+              Performed code review. Wrote unit test with Chai, Mocha, Jasmine,
+              Vue-test-utils
+            </li>
+            <li>
+              Worked according to SCRUM with 2 weeks sprints, PBR, demo, and
+              retrospection Work in Docker
+            </li>
+          </ul>
+        </td>
+        <td>
+          <p style={{ whiteSpace: "nowrap" }}>Nov 2017 - Oct 2018</p>
           <p>Remote</p>
         </td>
       </tr>
